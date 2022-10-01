@@ -1,6 +1,7 @@
 import { extendTheme } from '@chakra-ui/react';
 
 const sizes = {
+  13: "3.25rem",
   19: "4.75rem",
   25: "6.25rem",
   35: "8.75rem",
@@ -13,6 +14,7 @@ export const theme = extendTheme({
   colors: {
     gray: {
       "300": "#47585B",
+      "200": "#999999",
       "100": "#DADADA",
       "50": "#F5F8FA"
     },
@@ -35,7 +37,8 @@ export const theme = extendTheme({
   },
   lineHeights: {
     7.5: "1.875rem",
-    13: "3.375rem"
+    13: "3.375rem",
+    18: "4.5rem"
   },
   styles: {
     global: {
