@@ -18,7 +18,6 @@ export const Header = ({ isHome = false }: HeaderProps) => {
       position="relative"
       align="center"
       justify="center"
-      maxWidth={1440}
     >
       {!isHome && (
         <Link href="/" passHref>

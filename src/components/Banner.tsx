@@ -7,7 +7,6 @@ export const Banner = () => {
       w="100%"
       h={335}
       position="relative"
-      maxWidth={1440}
       align="center"
       bgImage="url('/images/night-sky-cover.png')"
       bgPosition="top center"

@@ -14,7 +14,6 @@ export const Carousel = () => {
       width="100%"
       maxWidth={1240}
       mx="auto"
-      mb="20px"
     >
       <Flex
         align="center"
@@ -28,9 +27,8 @@ export const Carousel = () => {
           fontWeight="medium"
         >
           Vamos nessa?
-          <Text>
-            Então escolha seu continente
-          </Text>
+          <br />
+          Então escolha seu continente
         </Heading>
       </Flex>
 

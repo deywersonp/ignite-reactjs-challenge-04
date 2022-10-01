@@ -13,7 +13,6 @@ export const AvailableTravelTypes = () => {
     <Box
       as="section"
       w="100%"
-      maxWidth={1440}
       px="35"
       mt={80.79}
       textAlign="center"
