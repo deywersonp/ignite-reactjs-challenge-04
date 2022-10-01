@@ -1,9 +1,15 @@
 import type { NextPage } from 'next'
 
-const Home: NextPage = () => {
+import { Banner } from '../components/Banner';
+import { Header } from '../components/Header';
+
+const HomePage: NextPage = () => {
   return (
-    <h1>Hello World</h1>
+    <>
+      <Header isHome />
+      <Banner />
+    </>
   )
 }
 
-export default Home;
+export default HomePage;
