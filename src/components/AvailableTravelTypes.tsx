@@ -1,4 +1,4 @@
-import { Box, SimpleGrid } from "@chakra-ui/react";
+import { Box, Divider, SimpleGrid } from "@chakra-ui/react";
 
 import { TravelType } from "./TravelType";
 
@@ -16,6 +16,7 @@ export const AvailableTravelTypes = () => {
       maxWidth={1440}
       px="35"
       mt={80.79}
+      textAlign="center"
       mx="auto"
     >
       <SimpleGrid
@@ -54,6 +55,15 @@ export const AvailableTravelTypes = () => {
           alt="Yellow cocktail"
         />
       </SimpleGrid>
+
+      <Divider
+        w={90}
+        mx="auto"
+        mt="80px"
+        mb="52px"
+        orientation='horizontal'
+        borderColor='black.300'
+      />
     </Box>
   )
 };
