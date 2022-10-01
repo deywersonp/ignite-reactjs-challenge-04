@@ -3,6 +3,7 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 export const Banner = () => {
   return (
     <Flex
+      as="section"
       w="100%"
       h={335}
       position="relative"
