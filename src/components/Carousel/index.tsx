@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import { CarouselItem } from "./CarouselItem";
+import { CONTINENTS } from "./data";
 
 export const Carousel = () => {
   return (
@@ -39,21 +40,18 @@ export const Carousel = () => {
           Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <CarouselItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CarouselItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CarouselItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CarouselItem />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CarouselItem />
-        </SwiperSlide>
+        {
+          CONTINENTS.map(continent => (
+            <SwiperSlide key={continent.title}>
+              <CarouselItem
+                title={continent.title}
+                description={continent.description}
+                href={continent.href}
+                src={continent.src}
+              />
+            </SwiperSlide>
+          ))
+        }
       </Swiper>
     </Box>
   )

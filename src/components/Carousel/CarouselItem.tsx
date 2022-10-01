@@ -1,9 +1,16 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
-export const CarouselItem = () => {
+interface CarouselItemProps {
+  title: string;
+  description: string;
+  href: string;
+  src: string;
+};
+
+export const CarouselItem = ({ title, description, href, src }: CarouselItemProps) => {
   return (
-    <Link href="/" passHref>
+    <Link href={href} passHref>
       <Flex
         as="a"
         w="100%"
@@ -11,7 +18,7 @@ export const CarouselItem = () => {
         align="center"
         justify="center"
         direction="column"
-        bgImage="url('/images/europe-cover-1.png')"
+        bgImage={src}
         bgPosition="center"
         bgRepeat="no-repeat"
       >
@@ -22,7 +29,7 @@ export const CarouselItem = () => {
           fontWeight="bold"
           lineHeight="18"
         >
-          Europa
+          {title}
         </Heading>
 
         <Text
@@ -30,7 +37,7 @@ export const CarouselItem = () => {
           fontWeight="bold"
           lineHeight="9"
         >
-          O continente mais antigo.
+          {description}
         </Text>
       </Flex>
     </Link>
