@@ -2,6 +2,8 @@ import { extendTheme } from '@chakra-ui/react';
 
 const sizes = {
   13: "3.25rem",
+  17: "4.375rem",
+  18: "4.5rem",
   19: "4.75rem",
   25: "6.25rem",
   35: "8.75rem",
