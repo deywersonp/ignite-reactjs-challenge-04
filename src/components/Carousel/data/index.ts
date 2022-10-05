@@ -21,7 +21,7 @@ export const CONTINENTS = [
     title: 'África',
     description: 'O continente tropical.',
     href: '/continent/africa',
-    src: "url('/images/continents/africa/cover-1.png')",
+    src: "url('/images/continents/africa/cover-1.jpg')",
   },
   {
     title: 'Europa',
