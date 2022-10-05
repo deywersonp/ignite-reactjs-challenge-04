@@ -32,7 +32,7 @@ export const CONTINENTS = {
     top100Cities: 0,
   },
   'europe': {
-    cover: '/images/europe-cover-2.png',
+    cover: '/images/continents/europe/cover-2.png',
     title: 'Europa',
     description: 'A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste',
     countries: 50,
