@@ -5,6 +5,14 @@ import { CONTINENTS } from './data';
 import { Header } from '../../components/Header';
 import { Hero } from '../../components/Hero';
 import { ContinentDescription } from '../../components/ContinentDescription';
+import { Top100Cities } from '../../components/Top100Cities';
+
+export type Top100City = {
+  url: string;
+  city: string;
+  country: string;
+  flagUrl: string;
+};
 
 type Continent = {
   cover: string;
@@ -12,7 +20,7 @@ type Continent = {
   description: string;
   countries: number;
   languages: number;
-  top100Cities: number;
+  top100Cities: Top100City[];
 };
 
 interface ContinentPageProps {
@@ -39,9 +47,10 @@ const ContinentPage: NextPage<ContinentPageProps> = ({ continent }) => {
         description={continent?.description}
         countries={continent?.countries}
         languages={continent?.languages}
-        top100Cities={continent?.top100Cities}
+        top100Cities={continent?.top100Cities.length}
       />
 
+      <Top100Cities cities={continent?.top100Cities} />
     </Flex>
   )
 };

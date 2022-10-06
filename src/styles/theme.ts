@@ -2,6 +2,7 @@ import { extendTheme } from '@chakra-ui/react';
 
 const sizes = {
   13: "3.25rem",
+  13.5: "3.375rem",
   17: "4.375rem",
   18: "4.5rem",
   19: "4.75rem",
@@ -36,6 +37,7 @@ export const theme = extendTheme({
   fonts: {
     body: "Poppins",
     heading: "Poppins",
+    cities: "Barlow"
   },
   lineHeights: {
     7.5: "1.875rem",
