@@ -20,14 +20,15 @@ export const CarouselItem = ({ title, description, href, src }: CarouselItemProp
         direction="column"
         bgImage={src}
         bgPosition="center"
+        bgSize="cover"
         bgRepeat="no-repeat"
       >
         <Heading
           as="h3"
           color="heading.50"
-          fontSize="5xl"
+          fontSize={["2xl", "5xl"]}
           fontWeight="bold"
-          lineHeight="18"
+          lineHeight={["9", "18"]}
         >
           {title}
         </Heading>
@@ -35,7 +36,8 @@ export const CarouselItem = ({ title, description, href, src }: CarouselItemProp
         <Text
           color="info.100"
           fontWeight="bold"
-          lineHeight="9"
+          fontSize={["sm", "2xl"]}
+          lineHeight={["21px", "9"]}
         >
           {description}
         </Text>

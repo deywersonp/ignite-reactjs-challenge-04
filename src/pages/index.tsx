@@ -21,7 +21,7 @@ const HomePage: NextPage = () => {
       justify="center"
       direction="column"
       mx="auto"
-      mb="10"
+      mb={["6", "10"]}
     >
       <Header isHome />
       <Banner />

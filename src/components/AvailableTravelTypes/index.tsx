@@ -17,7 +17,7 @@ export const AvailableTravelTypes = () => {
         flex="1"
         gap="4"
         alignItems="center"
-        minChildWidth="150px"
+        minChildWidth="130px"
       >
         {TRAVEL_TYPE.map(travel => (
           <TravelType
