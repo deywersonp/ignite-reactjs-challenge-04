@@ -21,19 +21,20 @@ export const Top100Cities = ({ cities }: Top100CitiesProps) => {
       px={["4", "10", "35"]}
     >
       <Text
-        fontSize="4xl"
+        fontSize={["2xl", "4xl"]}
         fontWeight="medium"
-        lineHeight="54px"
+        lineHeight={["9", "54px"]}
       >
         Cidades +100
       </Text>
 
       <Flex
         flex="1"
-        rowGap="48px"
+        justify={["center", "center", "flex-start"]}
+        rowGap={["20px", "48px"]}
         columnGap="45px"
         flexWrap="wrap"
-        pt="10"
+        pt={["5", "10"]}
       >
         {cities?.map(city => (
           <CityCard

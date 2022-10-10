@@ -28,7 +28,7 @@ export const Info = ({
       </Text>
 
       <Flex
-        align={["flex-start", "center"]}
+        align={["center"]}
         justify="center"
         gap="1"
       >
