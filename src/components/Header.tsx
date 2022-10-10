@@ -20,7 +20,7 @@ export const Header = ({ isHome = false }: HeaderProps) => {
           <ChakraLink
             as="a"
             position="absolute"
-            left="35"
+            left={["4", "4", "10", "35"]}
           >
             <Img
               src="/images/back.svg"

@@ -10,13 +10,14 @@ export const Hero = ({ url, title }: HeroProps) => {
     <Flex
       as="section"
       w="100%"
-      h={500}
-      align="flex-end"
+      h={[150, 500]}
+      align={["center", "flex-end"]}
+      justify={["center", "flex-start"]}
       bgImage={`url(${url})`}
       bgSize="cover"
       bgPosition="top center"
       bgRepeat="no-repeat"
-      px="35"
+      px={["4", "10", "35"]}
       mx="auto"
     >
       <Box>
@@ -25,7 +26,7 @@ export const Hero = ({ url, title }: HeroProps) => {
           maxWidth={424}
           color="heading.50"
           lineHeight="13"
-          pb="59"
+          pb={["0", "59"]}
         >
           {title}
         </Heading>

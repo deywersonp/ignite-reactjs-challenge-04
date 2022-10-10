@@ -18,7 +18,7 @@ export const ContinentDescription = ({
     <Box
       as="section"
       w="100%"
-      px="35"
+      px={["4", "10", "35"]}
       py="20"
       mx="auto"
     >

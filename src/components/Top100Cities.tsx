@@ -18,7 +18,7 @@ export const Top100Cities = ({ cities }: Top100CitiesProps) => {
       width="100%"
       mx="auto"
       maxWidth={1440}
-      px="35"
+      px={["4", "10", "35"]}
     >
       <Text
         fontSize="4xl"

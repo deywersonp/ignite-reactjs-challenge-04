@@ -36,7 +36,7 @@ const ContinentPage: NextPage<ContinentPageProps> = ({ continent }) => {
       justify="center"
       direction="column"
       mx="auto"
-      mb="10"
+      mb={["4", "10"]}
     >
       <Header />
       <Hero
