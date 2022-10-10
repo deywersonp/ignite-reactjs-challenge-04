@@ -11,7 +11,7 @@ export const Banner = () => {
       bgImage="url('/images/night-sky-cover.png')"
       bgPosition="center"
       bgRepeat="no-repeat"
-      px={["4", "35"]}
+      px={["4", "10", "35"]}
       mx="auto"
     >
       <Box>
@@ -34,7 +34,7 @@ export const Banner = () => {
         </Text>
       </Box>
       <Box
-        display={["none", "none", "block"]}
+        display={["none", "none", "none", "none", "block"]}
         w={417.15}
         h={270.74}
         position="absolute"
