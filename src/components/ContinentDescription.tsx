@@ -18,18 +18,19 @@ export const ContinentDescription = ({
     <Box
       as="section"
       w="100%"
+      pt={["6", "20"]}
+      pb={["8", "20"]}
       px={["4", "10", "35"]}
-      py="20"
       mx="auto"
     >
       <SimpleGrid
         flex="1"
-        gap="17"
-        minChildWidth="300px"
+        gap={["4", "17"]}
+        minChildWidth={["300px", "400px"]}
       >
         <Text
-          fontSize="2xl"
-          lineHeight="9"
+          fontSize={["sm", "2xl"]}
+          lineHeight={["21px", "9"]}
           textAlign="justify"
         >
           {description}

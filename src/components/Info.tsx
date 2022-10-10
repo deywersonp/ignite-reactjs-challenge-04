@@ -15,27 +15,27 @@ export const Info = ({
   return (
     <Flex
       direction="column"
-      alignItems="center"
+      align={["flex-start", "center"]}
       justify="center"
     >
       <Text
-        fontSize="5xl"
+        fontSize={["2xl", "5xl"]}
         fontWeight="semibold"
-        lineHeight="18"
+        lineHeight={["9", "18"]}
         color="yellow.400"
       >
         {value}
       </Text>
 
       <Flex
-        align="center"
+        align={["flex-start", "center"]}
         justify="center"
         gap="1"
       >
         <Text
-          fontSize="2xl"
-          fontWeight="semibold"
-          lineHeight="9"
+          fontSize={["lg", "2xl"]}
+          fontWeight={["normal", "semibold"]}
+          lineHeight={["27px", "9"]}
         >
           {label}
         </Text>
