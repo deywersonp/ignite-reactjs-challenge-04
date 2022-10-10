@@ -1,4 +1,4 @@
-import { Text, Box, SimpleGrid } from "@chakra-ui/react";
+import { Text, Box, Flex } from "@chakra-ui/react";
 import { CityCard } from "./CityCard";
 
 type City = {
@@ -28,11 +28,11 @@ export const Top100Cities = ({ cities }: Top100CitiesProps) => {
         Cidades +100
       </Text>
 
-      <SimpleGrid
+      <Flex
         flex="1"
         rowGap="48px"
         columnGap="45px"
-        minChildWidth="256px"
+        flexWrap="wrap"
         pt="10"
       >
         {cities?.map(city => (
@@ -44,7 +44,7 @@ export const Top100Cities = ({ cities }: Top100CitiesProps) => {
             flagUrl={city.flagUrl}
           />
         ))}
-      </SimpleGrid>
+      </Flex>
     </Box>
   )
 };
