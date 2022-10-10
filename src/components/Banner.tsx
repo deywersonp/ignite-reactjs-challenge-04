@@ -5,34 +5,36 @@ export const Banner = () => {
     <Flex
       as="section"
       w="100%"
-      h={335}
+      h={[163, 335]}
       position="relative"
       align="center"
       bgImage="url('/images/night-sky-cover.png')"
-      bgPosition="top center"
+      bgPosition="center"
       bgRepeat="no-repeat"
-      px="35"
+      px={["4", "35"]}
       mx="auto"
     >
       <Box>
         <Heading
           as="h1"
-          maxWidth={424}
+          fontSize={["xl", "3xl"]}
           color="heading.50"
-          lineHeight="13"
-          mb="20px"
+          lineHeight={["30px", "13"]}
+          mb={["8px", "20px"]}
         >
-          5 Continentes, infinitas possibilidades.
+          5 Continentes, <br />infinitas possibilidades.
         </Heading>
         <Text
           maxWidth={524}
           color="info.100"
-          lineHeight="7.5"
+          lineHeight={["21px", "7.5"]}
+          fontSize={["sm", "xl"]}
         >
           Chegou a hora de tirar do papel a viagem que você sempre sonhou.
         </Text>
       </Box>
       <Box
+        display={["none", "none", "block"]}
         w={417.15}
         h={270.74}
         position="absolute"

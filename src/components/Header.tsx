@@ -1,9 +1,5 @@
-import { Box, Link as ChakraLink, Flex } from "@chakra-ui/react";
+import { Link as ChakraLink, Flex, Img } from "@chakra-ui/react";
 import Link from "next/link";
-import Image from 'next/image';
-import logoImg from '/public/images/logo.png';
-import backButtonImg from '/public/images/back.svg';
-
 interface HeaderProps {
   isHome?: boolean;
 };
@@ -13,7 +9,7 @@ export const Header = ({ isHome = false }: HeaderProps) => {
     <Flex
       as="header"
       w="100%"
-      h="25"
+      h={["50px", "25"]}
       mx="auto"
       position="relative"
       align="center"
@@ -26,19 +22,19 @@ export const Header = ({ isHome = false }: HeaderProps) => {
             position="absolute"
             left="35"
           >
-            <Image
-              width={32}
-              height={32}
-              src={backButtonImg}
+            <Img
+              src="/images/back.svg"
               alt="Back"
+              width={["16px", "32px"]}
             />
           </ChakraLink>
         </Link>
       )}
 
-      <Image
-        src={logoImg}
+      <Img
+        src="/images/logo.png"
         alt="World Trip"
+        width={["81px", "184px"]}
       />
     </Flex>
   )
